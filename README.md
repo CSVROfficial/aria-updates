@@ -85,10 +85,6 @@ added it to.
 4. Set the token as an environment variable named `DISCORD_BOT_TOKEN`, then
    restart Aria.
 
-Once connected, owner-only commands (roles, channels, moderation) work in your
-build. In copies you share with others, those commands are stripped out — each
-person would need their own bot in their own server.
-
 ---
 
 ## Auto-updates
@@ -99,21 +95,6 @@ Downloads folder — it never installs anything silently.
 
 ---
 
-## For the owner: building and publishing
-
-The owner build includes `publish.py`, a one-click release tool.
-
-1. Run `py -3.12 publish.py`.
-2. Fill in your update URL, GitHub repo, and token once — it remembers them.
-3. Pick patch / minor / major, add release notes, and hit **Create & Publish**.
-
-It strips the owner-only tools, scans for stray secrets, compiles the standalone
-exe (showing CSVRStudios as publisher), uploads it as a GitHub release, and
-commits the version manifest so every installed copy sees the update. Your source
-code stays private; only the finished download is public.
-
----
-
 ## Privacy & safety
 
 - **Aria cannot delete, move, rename, or overwrite files.** Those abilities
@@ -121,7 +102,6 @@ code stays private; only the finished download is public.
   find and open files, and that's the limit.
 - **Irreversible Discord actions** (kick, ban, delete role, delete channel,
   purge, disconnect everyone) always ask you to confirm out loud first.
-- **The server owner is protected** from moderation actions.
 - **No secrets in the code.** Your OpenAI key and Discord token live only in your
   environment, never in the app or in copies you share.
 - **She does not report IP addresses.**
