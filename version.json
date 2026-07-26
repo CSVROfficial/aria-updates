@@ -1,5 +1,5 @@
 {
-  "version": "1.2.2",
-  "url": "https://github.com/ConnorStameyVR/aria-updates/releases/download/v1.2.2/Aria-1.2.2-exe.zip",
-  "notes": "Added Voice To Tell If Update Is Needed\nFixed Public Discord Feautes\nRemoved Immutable"
+  "version": "1.1.0",
+  "url": "https://github.com/ConnorStameyVR/aria-updates/releases/download/v1.1.0/Aria-1.1.0-exe.zip",
+  "notes": "Added Fixed Updates\nDesktop Adding\nUpdate Notification Fixes\nAria Auto Updater"
 }
