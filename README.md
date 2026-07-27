@@ -5,7 +5,7 @@ Say "Aria," wait for the chime, and talk. She answers out loud and can run your
 PC — apps, windows, volume, files, timers, the web — moderate a Discord server,
 and even take the controls in a game.
 
-*Aria by CSVRStudios · www.csvrstudios.com*
+*Aria by CSVRStudios · www.csvrstudios.com/aria*
 
 ---
 
@@ -125,7 +125,7 @@ Downloads folder — it never installs anything silently.
 
 ## Credits
 
-Built by **CSVRStudios** — www.csvrstudios.com
+Built by **CSVRStudios** — www.csvrstudios.com/aria
 
 Powered by OpenAI (Whisper, GPT-4o-mini, TTS) and faster-whisper for the local
 wake word.
