@@ -33,10 +33,10 @@ See **VOICE-COMMANDS.md** for the full command list.
 
 Aria listens locally for the wake word using a small offline model (free, no
 cloud). Once she hears "Aria," she records your request and sends it to OpenAI:
-**Whisper** turns speech to text, **GPT-4o-mini** decides what to do (and picks
-the right tools), and **OpenAI TTS** speaks the reply back in a natural voice.
-A translucent glass bar shows her state — idle, listening, thinking, speaking,
-or driving a game.
+**Whisper** turns speech to text, a **fast OpenAI model** decides what to do (and
+picks the right tools), and **OpenAI TTS** speaks the reply back in a natural
+voice. A translucent glass bar shows her state — idle, listening, thinking,
+speaking, or driving a game.
 
 Only the wake word is always-on and local. Nothing is sent anywhere until you
 say "Aria" and speak a request.
@@ -57,12 +57,14 @@ The packaged `.exe` bundles everything else — you don't need to install Python
 
 ## Getting started (for users)
 
-1. Download the latest `Aria-x.x.x-exe.zip` from the Releases page.
+1. Download the latest `Aria-exe.zip` from the Releases page.
 2. Unzip it somewhere permanent (not inside the zip viewer).
 3. Double-click **Aria.exe**.
-   - Windows may show a blue "protected your PC" box the first time. Click
-     **More info -> Run anyway**. This is normal for any new app that isn't from
-     a big company; it will show **CSVRStudios** as the publisher.
+   - Windows will show a blue **"Windows protected your PC"** box. Click
+     **More info -> Run anyway**. This is normal and expected for a small indie
+     app that isn't code-signed — Windows shows this warning for any new app it
+     doesn't yet recognize. Aria is safe; the warning is about the app being new,
+     not about it being harmful.
 4. A welcome window appears — paste your OpenAI API key and click continue.
 5. The bar appears. Say "Aria" and start talking.
 
@@ -104,14 +106,15 @@ Downloads folder — it never installs anything silently.
   purge, disconnect everyone) always ask you to confirm out loud first.
 - **No secrets in the code.** Your OpenAI key and Discord token live only in your
   environment, never in the app or in copies you share.
-- **She does not report IP addresses.**
+- **Your voice stays local until you invoke her.** Only the offline wake-word
+  model is always-on; audio is sent to OpenAI only after you say "Aria."
 
 ---
 
 ## Troubleshooting
 
 - **"Windows protected your PC"** — click More info -> Run anyway. Normal for a
-  new unsigned app.
+  new, unsigned indie app.
 - **A DLL error on launch** — keep `Aria.exe` inside its folder next to the
   `_internal` folder; don't move the exe out on its own.
 - **Aria doesn't hear the wake word** — check your microphone is set as the
@@ -127,5 +130,5 @@ Downloads folder — it never installs anything silently.
 
 Built by **CSVRStudios** — www.csvrstudios.com/aria
 
-Powered by OpenAI (Whisper, GPT-4o-mini, TTS) and faster-whisper for the local
-wake word.
+Powered by OpenAI (Whisper, a fast OpenAI model, and TTS) and faster-whisper for
+the local wake word.
